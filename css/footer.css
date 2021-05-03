@@ -1,0 +1,30 @@
+footer nav {
+    height: 4vh;
+}
+
+footer nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer nav ul li:first-child {
+    margin-right: auto;
+    margin-left: 4rem;
+}
+
+footer nav ul li:last-child {
+    margin-right: 4rem;
+}
+
+footer nav ul li:not(:first-child) {
+    margin: 0 4rem;
+}
+
+footer nav ul li a {
+    display: flex;
+}
+
+footer nav ul li a img {
+    height: 100%;
+}
