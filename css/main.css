@@ -1,0 +1,97 @@
+main {
+    background-color: #F9F9F9;
+    padding-top: 5rem;
+}
+
+main section {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+main section h2 {
+    font-size: 3rem;
+}
+
+main section h2, main section p {
+    text-align: center;
+}
+
+main section hr {
+    border-color: #1FCF7C;
+    border-style: solid;
+    margin: 1.5rem auto;
+    width: 8%;
+}
+
+main section p {
+    color: #A5A5A5;
+}
+
+main section ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+main section ul li {
+    color: #222;
+    font-weight: bold;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+main section ul li:hover,  main section ul li:focus{
+    color: #1FCF7C;
+}
+
+.on {
+    color: #1FCF7C;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 110rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+main div figure {
+    width: calc(100% / 3 - 2rem);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem gray;
+    overflow: hidden;
+    margin-bottom: 10rem;
+    margin: 1rem;
+    height: 45rem;
+}
+
+main div figure img {
+    width: 100%;
+    height: 80%;
+    vertical-align: top;
+    object-fit: cover;
+
+}
+
+main div figure figcaption {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div figure h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main div figure p {
+    color: #A5A5A5;
+}
+
+main div figure img:hover {
+    cursor: pointer;
+}
