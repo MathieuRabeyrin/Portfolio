@@ -8,102 +8,225 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/study.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="main-menu">
             <ul>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#1">Home</a></li>
-                <li><a href="#2">About</a></li>
-                <li><a href="#3">Work</a></li>
-                <li><a href="#4">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">A Propos</a></li>
+                <li><a href="#study">Parcours</a></li>
+                <li><a href="#projects">Projets</a></li>
             </ul>
         </nav>
         <figure>
-            <img class="" src="./assets/background.jpg" alt="background">
-            <img class="hidden" src="./assets/background2.jpg" alt="background">
+            <img class="hidden" src="./assets/background.jpg" alt="background">
+            <img class="" src="./assets/background2.jpg" alt="background">
             <img class="hidden" src="./assets/background3.jpg" alt="background">
-            <img class="hidden" src="./assets/background4.jpg" alt="background">
         </figure>
         <div>
             <a href="#" class="prev" aria-hidden="true" tabindex="-1"><img src="./assets/chevron_left.svg" alt="chevron"></a>
             <section>
                 <hr>
-                <h1>Jean Lasalle</h1>
-                <p>Developpeur Basic Pascal Fortran Cobol</p>
-                <a href="#">Projets</a>
+                <h1>Mathieu Rabeyrin</h1>
+                <p>Etudiant Développeur</p>
+                <a href="#projects">Projets</a>
             </section>
             <a href="#" class="next" aria-hidden="true" tabindex="-1"><img src="./assets/chevron_right.svg" alt="chevron"></a>
         </div>
     </header>
     <main>
-        <section>
-            <h2>Projets</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi cum ut aliquam quisquam unde dolores voluptatibus.</p>
-            <ul>
-                <li class="on">All</li>
-                <li>Lisp Emacs</li>
-                <li>Lisp</li>
-                <li>FASM</li>
-            </ul>
+        <section class="about">
+            <div>
+                <h2><span id="about"></span>A Propos</h2>
+                <hr>
+                <figure>
+                    <img src="./assets/background.jpg" alt="avatar">
+                    <figcaption>
+                        <h3>Présentation</h3>
+                        <p>Je suis actuellement étudiant au BTS SIO (Services Informatiques aux Organisations) en spécialité SLAM (Solutions Logicielles et Application Métiers) au sein de ITIC Paris.
+                            Passionné d'informatique, j'ai choisi ce cursus afin d'améliorer mes compétences en programmation et en système. Ce portfolio a pour but d'y exposer mes deux années d'études, mes compétences ainsi que les différents projets sur lesquels j'ai pu travailler.</p>
+                        <a href="./assets/cv.pdf" target="_blank">Voir mon CV</a>
+                        </figcaption>
+                </figure>
+            </div>
         </section>
-        <div class="grid" role="group">
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>cobol</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>switf</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>lisp</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>lisp</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>lisp</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="./assets/background.jpg" alt="">
-                <figcaption>
-                    <h3>Hello World</h3>
-                    <p>lisp</p>
-                </figcaption>
-            </figure>
-        </div>
+        <section class="study">
+            <div>
+                <h2><span id="study"></span>Parcours</h2>
+                <hr>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <h3>BAC STI2D option SIN</h3>
+                                <p>Lycée Jules Richard, Paris (75019)</p>
+                            </div>
+                            <div class="point"></div>
+                            <div class="date">
+                                <h4>2019</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>BTS SIO 1ere année option SLAM</h3>
+                                <p>ITIC PARIS, Paris (75020)</p>
+                            </div>
+                            <div class="point"></div>
+                            <div class="date">
+                                <h4>2020</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Stage développeur</h3>
+                                <p>
+                                    Création d'un site pour la visualisation des données de google analytics de ccistore.fr.</br>
+                                    Réalisation d'un script node js afin de relier l'api d'un logiciel de sondage à une base de donées.</br> 
+                                    Developpement d'une skill alexa pour contrôler les serveurs azure avec la voix.</br>
+                                    CCI France, Levallois-Perret (92300) 
+                                </p>
+                            </div>
+                            <div class="point"></div>
+                            <div class="date">
+                                <h4>Juin-Juillet 2020</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>BTS SIO 2eme année option SLAM</h3>
+                                <p>ITIC PARIS, Paris (75020)</p>
+                            </div>
+                            <div class="point"></div>
+                            <div class="date">
+                                <h4>2020-2021</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Stage développeur web</h3>
+                                <p>
+                                    Ajout de fonctionnalités sur le projet "Datalab".</br>
+                                    CCI France, Levallois-Perret (92300)
+                                </p>
+                            </div>
+                            <div class="point"></div>
+                            <div class="date">
+                                <h4>Novembre-Décembre 2020</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+        <section class="projects">
+            <div>
+                <h2><span id="projects"></span>Projets</h2>
+                <hr>
+                <p>L'ensemble des productions réalisées pendant ma formation</p>
+                <ul id="project-nav">
+                    <li class="on">Tout</li>
+                    <li>PPE</li>
+                    <li>Stages</li>
+                </ul>
+            </div>
+            <div class="grid" role="group">
+                <figure name="ppe">
+                    <img src="./assets/virtualbox.png" alt="">
+                    <figcaption>
+                        <h3>PPE VirtualBox</h3>
+                        <p>Réalisation de vm (ubuntu, window) à l'aide de l'outil virtualbox</p>
+                        <a href="./assets/Compte Rendu - Ubuntu 18.04 LTS Desktop.pdf" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_montagne.jpg" alt="">
+                    <figcaption>
+                        <h3>PPE La Montagne</h3>
+                        <p>Réalisation d'une single page sur le thème de la montagne.</br>html, css, js, php, sql</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_web" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_gmail.jpg" alt="">
+                    <figcaption>
+                        <h3>PPE Gmail</h3>
+                        <p>Réalisation d'une singe page Gmail.</br>html, css, js, php, sql</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_web_2" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_commande.png" alt="">
+                    <figcaption>
+                        <h3>PPE Commande</h3>
+                        <p>Réalisation d'un formulaire de traitement de commande.</br>html, css, php</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_commande" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_wireframe.png" alt="">
+                    <figcaption>
+                        <h3>PPE Article</h3>
+                        <p>Réalisation d'une maquette statique à partir du wireframe.</br>html, css</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_article" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_admin.png" alt="">
+                    <figcaption>
+                        <h3>PPE Interface Admin Gestion Clients</h3>
+                        <p>Réalisation d'un panel admin pour permettre aux administrateurs des Maisons des ligues, de recenser leurs clients.</br>html, css, php, sql</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_admin" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="ppe">
+                    <img src="./assets/ppe_gestion_ligue.png" alt="">
+                    <figcaption>
+                        <h3>PPE Gestion Des Ligues</h3>
+                        <p>Application bureau pour gérer les employés des ligues.</br>java, sql</br></p>
+                        <a href="https://github.com/NicoLarson/PPE_BTS_SIO_SLAM2" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+                <figure name="stage">
+                    <img src="./assets/alexa.png" alt="">
+                    <figcaption>
+                        <h3>STAGE Skill Alexa avec Azure REST API</h3>
+                        <p>Création d'une skill alexa pour contrôler les serveurs azure avec la voix par le biais de l'utilistion de azure rest api.</br>node js</br></p>
+                    </figcaption>
+                </figure>
+                <figure name="stage">
+                    <img src="./assets/nodejs.png" alt="">
+                    <figcaption>
+                        <h3>STAGE Node js | Db</h3>
+                        <p>Création d'un script node js afin de relier l'api d'un logicel de sondage à
+                            une base de données pour rendre les données accessibles depuis un
+                            logiciel de bi.</br>node js</br></p>
+                    </figcaption>
+                </figure>
+                <figure name="stage">
+                    <img src="./assets/analytics.gif" alt="">
+                    <figcaption>
+                        <h3>STAGE Google Analytics | Chart.js</h3>
+                        <p>Réalisation d'un site pour la visualisation des données de google analytics sur ccistore.fr</br>flask, sql, jinja2, css, js, chart js</br></p>
+                    </figcaption>
+                </figure>
+                <figure name="stage">
+                    <img src="./assets/liste.PNG" alt="">
+                    <figcaption>
+                        <h3>STAGE "Datalab"</h3>
+                        <p>Ajout de fonctionnalités au CRM</br>django, jinja2, css, js, bootstrap, sql</br></p>
+                        <a href="https://github.com/MathieuRabeyrin/ppe_admin" target="_blank">Voir plus</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>&copy; Rabeyrin Mathieu 2021</li>
-                <li><a href="https://github.com/MathieuRabeyrin" target="_blank"><img src="./assets/github.svg" alt="github"></a></li>
-                <li><a href="https://www.linkedin.com/in/mathieu-rabeyrin-18882a1b8/" target="_blank"><img src="./assets/linkedin.svg" alt="linkedin"></a></li>
-            </ul>
-        </nav>
-    </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>

@@ -28,4 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
     checkOverflow();
     toggleClass();
   });
+
+  const updateGrid = (cat) => {
+    Array.from(document.querySelectorAll("[name='stage'], [name='ppe']")).map(card => card.removeAttribute("class"));
+    if (cat == "PPE")
+      Array.from(document.getElementsByName("stage")).map(card => card.setAttribute("class", "hide"));
+    if (cat == "Stages")
+      Array.from(document.getElementsByName("ppe")).map(card => card.setAttribute("class", "hide"));
+  }
+
+  const clearAllAttributes = (navFilter) => {
+    for (let i = 0; i < navFilter.length; i++)
+      navFilter[i].removeAttribute("class");
+  }
+  const setListenerFilter = () => {
+    const navFilter = document.getElementById("project-nav").children;
+
+    for (let i = 0; i < navFilter.length; i++)
+      navFilter[i].addEventListener("click", () => {
+        clearAllAttributes(navFilter);
+        navFilter[i].setAttribute("class", "on");
+        updateGrid(navFilter[i].textContent);
+      });
+  }
+
+  setListenerFilter()
 });

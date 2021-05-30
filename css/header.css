@@ -1,3 +1,9 @@
+:root {
+    --text: #fff;
+    --bg: transparent;
+    --border: rgba(255,255,255, 0.4);
+}
+
 header {
     width: 100%;
     height: 100vh;
@@ -14,10 +20,12 @@ header figure img {
 
 header nav {
     height: 8vh;
-    border-bottom: solid 0.1rem rgba(255,255,255, 0.4);
+    border-bottom: solid 0.1rem var(--border);
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: var(--bg);
+    transition: background 400ms ease;
 }
 
 header nav ul {
@@ -45,7 +53,7 @@ header nav ul li a {
 }
 
 header nav ul li a {
-    color: white;
+    color: var(--text);
     font-size: 2rem;
 }
 
@@ -54,14 +62,14 @@ header nav ul li:not(:first-child) a {
 }
 
 header nav ul li:last-child a {
-    border: solid 0.2rem #ffffff;
+    border: solid 0.2rem var(--text);
     border-radius: 2rem;
     padding: 1rem 2rem;
 }
 
 header nav ul li:last-child a:hover, header nav ul li:last-child a:focus{
-    background-color: #ffffff;
-    color: black;
+    background-color: var(--text);
+    color: var(--bg);
     transition: 0.3s ease;
 }
 
@@ -140,4 +148,21 @@ header section a:hover, header section a:focus {
 
 .hidden {
     display: none;
+}
+
+.scrolled {
+    --text: #222;
+    --bg: #f4f4f4;
+    --border: transparent;
+    box-shadow: 0 0 0.3rem #222;
+    z-index: 10;
+    transition: background 250ms ease;
+}
+
+h2 {
+    position: relative;
+}
+
+h2 span {
+    position: absolute; top: -10rem;
 }

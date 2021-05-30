@@ -1,0 +1,44 @@
+.about {
+    background-color: #fff;
+    padding: 5rem;
+}
+
+.about div {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.about figure {
+    display: flex;
+}
+
+.about figure img {
+    height: 40rem;
+    width: 40%;
+    object-fit: cover;
+}
+
+.about figure figcaption {
+    width: 60%;
+    padding: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+.about figure figcaption h3 {
+    font-size: 2.4rem;
+}
+
+.about figure figcaption p {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.about a {
+    background-color: #1FCF7C;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: block;
+    max-width: 25%;
+    text-align: center;
+}

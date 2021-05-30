@@ -1,0 +1,9 @@
+.study {
+    background-color: #fafafa;
+    padding: 5rem;
+}
+
+.study > div {
+    max-width: 80rem;
+    margin: 0 auto;
+}
